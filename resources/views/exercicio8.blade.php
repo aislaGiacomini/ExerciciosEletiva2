@@ -1,7 +1,7 @@
 @extends('layout')
 @section('titulo', 'Exercicio 8')
 @section('conteudo')
-        <h1>Execicio 8</h1>
+        <h1>Execicio 8 - Calculo da area do retângulo</h1>
         <form method="post" action="/exer8resp">
         <div class="mb-3">
             <label for="altura" class="form-label">Digite a altura do retângulo</label>

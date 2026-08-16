@@ -1,7 +1,7 @@
 @extends('layout')
 @section('titulo', 'Exercicio 5')
 @section('conteudo')
-        <h1>Execicio 5</h1>
+        <h1>Execicio 5 - Média</h1>
         <form method="post" action="/exer5resp">
         <div class="mb-3">
             <label for="num1" class="form-label">Digite a primeira nota</label>

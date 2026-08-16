@@ -1,7 +1,7 @@
 @extends('layout')
 @section('titulo', 'Exercicio 11')
 @section('conteudo')
-        <h1>Execicio 11</h1>
+        <h1>Execicio 11 - Calculo do perimetro do circulo</h1>
         <form method="post" action="/exer11resp">
         <div class="mb-3">
             <label for="raio" class="form-label">Digite o raio do circulo</label>

@@ -1,7 +1,7 @@
 @extends('layout')
 @section('titulo', 'Exercicio 16')
 @section('conteudo')
-        <h1>Execicio 16</h1>
+        <h1>Execicio 16 - Calculo de desconto</h1>
         <form method="post" action="/exer16resp">
         <div class="mb-3">
             <label for="num1" class="form-label">Digite o preco do produto</label>

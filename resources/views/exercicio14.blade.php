@@ -1,7 +1,7 @@
 @extends('layout')
 @section('titulo', 'Exercicio 14')
 @section('conteudo')
-        <h1>Execicio 14</h1>
+        <h1>Execicio 14 - Conversão para Milhas</h1>
         <form method="post" action="/exer14resp">
         <div class="mb-3">
             <label for="valor" class="form-label">Digite o numero em quilômetros</label>

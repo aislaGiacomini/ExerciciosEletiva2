@@ -1,7 +1,7 @@
 @extends('layout')
 @section('titulo', 'Exercicio 13')
 @section('conteudo')
-        <h1>Execicio 13</h1>
+        <h1>Execicio 13 - Conversão para centimetros</h1>
         <form method="post" action="/exer13resp">
         <div class="mb-3">
             <label for="metros" class="form-label">Digite o numero em metros</label>

@@ -1,7 +1,7 @@
 @extends('layout')
 @section('titulo', 'Exercicio 15')
 @section('conteudo')
-        <h1>Execicio 15</h1>
+        <h1>Execicio 15 - Calculo de IMC</h1>
         <form method="post" action="/exer15resp">
         <div class="mb-3">
             <label for="num1" class="form-label">Digite o seu peso</label>

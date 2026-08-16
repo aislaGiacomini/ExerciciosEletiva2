@@ -1,7 +1,7 @@
 @extends('layout')
 @section('titulo', 'Exercicio 7')
 @section('conteudo')
-        <h1>Execicio 7</h1>
+        <h1>Execicio 7 - Conversão para Celsius</h1>
         <form method="post" action="/exer7resp">
         <div class="mb-3">
             <label for="tempF" class="form-label">Digite a temperatura em Fahrenheit</label>

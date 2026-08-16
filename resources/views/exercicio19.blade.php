@@ -1,7 +1,7 @@
 @extends('layout')
 @section('titulo', 'Exercicio 19')
 @section('conteudo')
-        <h1>Execicio 19</h1>
+        <h1>Execicio 19 - Conversão de dias para horas, minutos e segundos</h1>
         <form method="post" action="/exer19resp">
         <div class="mb-3">
             <label for="dias" class="form-label">Digite um valor em dias</label>
