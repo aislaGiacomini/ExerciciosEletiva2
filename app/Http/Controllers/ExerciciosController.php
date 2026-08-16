@@ -149,4 +149,15 @@ class ExerciciosController extends Controller
         $resultado = $num1 ** $num2;
         return view('exercicio12', ['resultado' => $resultado]);
     }
+
+    public function abrirFormExer13(){
+        return view('exercicio13');
+    }
+
+    public function respostaExer13(Request $request){
+        $metros = $request->metros;
+        
+        $centimetros = $metros * 100;
+        return view('exercicio13', ['centimetros' => $centimetros]);
+    }
 }
