@@ -41,4 +41,19 @@ class ExerciciosController extends Controller
         $multiplicacao = $num1 * $num2;
         return view('exercicio3', ['multiplicacao' => $multiplicacao]);
     }
+
+    public function abrirFormExer4(){
+        return view('exercicio4');
+    }
+
+    public function respostaExer4(Request $request){
+        $num1 = $request->num1;
+        $num2 = $request->num2;
+
+        if($num2 == 0){
+            return view('exercicio4', ['erro' => 'Não é possível dividir por zero.']);
+        }
+        $divisao = $num1 / $num2;
+        return view('exercicio4', ['divisao' => $divisao]);
+    }
 }
