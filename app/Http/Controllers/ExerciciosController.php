@@ -91,4 +91,16 @@ class ExerciciosController extends Controller
         $tempC = ($tempF - 32) / 1.8;
         return view('exercicio7', ['tempC' => $tempC]);
     }
+
+    public function abrirFormExer8(){
+        return view('exercicio8');
+    }
+
+    public function respostaExer8(Request $request){
+        $altura = $request->altura;
+        $largura = $request ->largura;
+        
+        $area = $altura * $largura;
+        return view('exercicio8', ['area' => $area]);
+    }
 }
