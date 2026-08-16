@@ -222,4 +222,19 @@ class ExerciciosController extends Controller
         $montante = $capital * (1 + $taxa / 100) ** $periodo;
         return view('exercicio18', ['montante' => $montante]);
     }
+
+    public function abrirFormExer19(){
+        return view('exercicio19');
+    }
+
+    public function respostaExer19(Request $request){
+        $dias = $request->dias;
+
+        $horas = $dias * 24;
+        $minutos = $horas * 60;
+        $segundos = $minutos * 60;
+
+
+        return view('exercicio19', ['horas' => $horas, 'minutos' => $minutos, 'segundos' => $segundos]);
+    }
 }
