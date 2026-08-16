@@ -12,3 +12,6 @@ Route::post('/exer1resp', [ExerciciosController::class, 'respostaExer1']);
 
 Route::get('/exercicio2', [ExerciciosController::class, 'abrirFormExer2']);
 Route::post('/exer2resp', [ExerciciosController::class, 'respostaExer2']);
+
+Route::get('/exercicio3', [ExerciciosController::class, 'abrirFormExer3']);
+Route::post('/exer3resp', [ExerciciosController::class, 'respostaExer3']);

@@ -18,7 +18,7 @@ class ExerciciosController extends Controller
         return view('exercicio1', ['soma' => $soma]);
     }
 
-     public function abrirFormExer2(){
+    public function abrirFormExer2(){
         return view('exercicio2');
     }
 
@@ -27,6 +27,18 @@ class ExerciciosController extends Controller
         $num2 = $request->num2;
 
         $subtracao = $num2 - $num1;
-        return view('exercicio2', ['Subtracao' => $subtracao]);
+        return view('exercicio2', ['subtracao' => $subtracao]);
+    }
+
+    public function abrirFormExer3(){
+        return view('exercicio3');
+    }
+
+    public function respostaExer3(Request $request){
+        $num1 = $request->num1;
+        $num2 = $request->num2;
+
+        $multiplicacao = $num1 * $num2;
+        return view('exercicio3', ['multiplicacao' => $multiplicacao]);
     }
 }
