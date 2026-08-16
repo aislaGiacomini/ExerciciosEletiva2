@@ -160,4 +160,15 @@ class ExerciciosController extends Controller
         $centimetros = $metros * 100;
         return view('exercicio13', ['centimetros' => $centimetros]);
     }
+
+    public function abrirFormExer14(){
+        return view('exercicio14');
+    }
+
+    public function respostaExer14(Request $request){
+        $valor = $request->valor;
+        
+        $milhas = $valor /  1.609;
+        return view('exercicio14', ['milhas' => $milhas]);
+    }
 }
