@@ -171,4 +171,16 @@ class ExerciciosController extends Controller
         $milhas = $valor /  1.609;
         return view('exercicio14', ['milhas' => $milhas]);
     }
+
+    public function abrirFormExer15(){
+        return view('exercicio15');
+    }
+
+    public function respostaExer15(Request $request){
+        $num1 = $request->num1;
+        $num2 = $request->num2;
+
+        $imc = $num1 / ($num2 ** 2);
+        return view('exercicio15', ['imc' => $imc]);
+    }
 }
